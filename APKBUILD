@@ -28,7 +28,7 @@ prepare() {
 
 build() {
 	cd "$_builddir"
-	./configure --prefix=/usr
+	./configure --prefix=/usr --with-pic
 	make
 }
 
