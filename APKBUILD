@@ -2,7 +2,7 @@
 # Maintainer: Sasha Gerrand <alpine-pkgs@sgerrand.com>
 pkgname=nlopt
 pkgver=2.4.2
-pkgrel=0
+pkgrel=1
 pkgdesc="NLopt is a free/open-source library for nonlinear optimization"
 url="http://ab-initio.mit.edu/wiki/index.php/NLopt"
 arch="all"
@@ -28,7 +28,7 @@ prepare() {
 
 build() {
 	cd "$_builddir"
-	./configure --prefix=/usr
+	./configure --prefix=/usr --with-pic
 	make
 }
 
